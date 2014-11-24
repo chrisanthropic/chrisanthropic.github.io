@@ -15,25 +15,25 @@ I'm assuming that you're not *migrating* from Octopress 2.0 but are starting com
 `gem install jekyll`
 
 ## Create Site scaffolding
-    ```
-    jekyll new SITENAME
-    cd SITENAME
-    ```
+`jekyll new SITENAME`
+`cd SITENAME`
+
 
 ## Install Octopress
 
-1. Add a Gemfile to your directory with the following content:
-    ```
-    source "https://rubygems.org"
-    gem 'octopress', '~> 3.0.0.rc.15' 
-    ```
+* Add a Gemfile to your directory with the following content:
 
-2. Run `bundle'
-3. Run 'octopress init'
+```
+source "https://rubygems.org"
+gem 'octopress', '~> 3.0.0.rc.15' 
+```
+
+* Run `bundle`
+* Run `octopress init`
 
 ## Set up Github deployment
 1. Create your Github-pages repo via Github
-2. Run `octopress deploy init git'
+2. Run `octopress deploy init git`
 3. Add your git URL to `_deploy.yml` file
 
 ## CNAME
@@ -51,13 +51,9 @@ Create your CNAME file if you're using a custom URL with Github-pages
 1. Run `git init`
 2. Run `git remote add origin GIT-REPO-URl`
 3. Run
-
-    ```
-    git add .
-    git commit -m 'inital Octopress 3.0 install'
-    git checkout -b source
-    ```
-
+`git add .`
+`git commit -m 'inital Octopress 3.0 install'`
+`git checkout -b source`
 4. Run `git push -u origin source`
 
 ## Deploy the Site
