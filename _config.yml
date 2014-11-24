@@ -15,4 +15,7 @@ github_username:
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+
 destination: _site
