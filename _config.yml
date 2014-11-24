@@ -9,7 +9,7 @@ baseurl: ""
 url: "http://www.chrisanthropic.com"
 
 twitter_username:
-github_username:chrisanthropic
+github_username: chrisanthropic
 
 # Build settings
 markdown: kramdown
