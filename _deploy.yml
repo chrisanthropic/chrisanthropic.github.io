@@ -1,0 +1,6 @@
+method: git
+site_dir: _site                           # Location of your your static site files.
+git_url: git@github.com:chrisanthropic/chrisanthropic.github.io
+git_branch: master
+
+# remote_path:                            # Destination directory
