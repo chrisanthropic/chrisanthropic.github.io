@@ -1,5 +1,0 @@
-0000000000000000000000000000000000000000 ca3d39df4ab9d5042f32f2aebd1c6a08c8aa04d6 Christopher Tarwater <ctarwater@gmail.com> 1416792572 -0800	branch: Created from HEAD
-ca3d39df4ab9d5042f32f2aebd1c6a08c8aa04d6 6fee4f6c3c9f9512ce46c17c85057f9625bf8615 Christopher Tarwater <ctarwater@gmail.com> 1416792647 -0800	commit: readme
-6fee4f6c3c9f9512ce46c17c85057f9625bf8615 c6596f735c19f9f9c9af9a205b0b64f84643fd8e Christopher Tarwater <ctarwater@gmail.com> 1416793138 -0800	commit: update permalinks
-c6596f735c19f9f9c9af9a205b0b64f84643fd8e 38b7a19d89fc915c501446f16efd084443cf82b7 Christopher Tarwater <ctarwater@gmail.com> 1416796308 -0800	commit: basic customization
-38b7a19d89fc915c501446f16efd084443cf82b7 fd9c6274980fcd5f5d1b7ca86511790aad344d37 Christopher Tarwater <ctarwater@gmail.com> 1417121503 -0800	commit: move blog to /blog and add it to navigation menu
