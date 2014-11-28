@@ -57,4 +57,4 @@ Create your CNAME file if you're using a custom URL with Github-pages
 4. Run `git push -u origin source`
 
 ## Deploy the Site
-Run `octopress deploy`
+Run `octopress deploy` 

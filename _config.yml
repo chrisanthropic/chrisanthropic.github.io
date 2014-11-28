@@ -17,3 +17,5 @@ kramdown:
   input: GFM
 
 destination: _site
+
+permalink: /blog/:year/:title
