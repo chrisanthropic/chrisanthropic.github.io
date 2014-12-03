@@ -1,2 +1,6 @@
 _site
 .sass-cache
+.bundle
+bin
+vendor
+s3_website.yml
