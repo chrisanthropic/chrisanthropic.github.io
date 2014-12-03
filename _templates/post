@@ -2,4 +2,9 @@
 layout: {{ layout }}
 title: {{ title }}
 date: {{ date }}
+sitemap:
+  lastmod: {{ date }}
+  priority: 0.5
+  changefreq: monthly
+  exclude: 'no'
 ---
