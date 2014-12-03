@@ -11,6 +11,10 @@ url: "http://www.chrisanthropic.com"
 twitter_username:
 github_username: chrisanthropic
 
+# Google Analytics
+google_universal_analytics: UA-57294441-1
+google_universal_analytics_cookiedomain: auto
+
 # Build settings
 markdown: kramdown
 kramdown:
