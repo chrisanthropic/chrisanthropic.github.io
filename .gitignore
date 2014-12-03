@@ -3,4 +3,4 @@ _site
 .bundle
 bin
 vendor
-s3_website.yml
+deploy.yml
