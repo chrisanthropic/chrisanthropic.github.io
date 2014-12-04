@@ -1,6 +1,11 @@
-method: git
+method: s3                                # How do you want to deploy? git, rsync or s3.
 site_dir: _site                           # Location of your your static site files.
-git_url: git@github.com:chrisanthropic/chrisanthropic.github.io
-git_branch: master
 
-# remote_path:                            # Destination directory
+bucket_name: www.chrisanthropic.com
+access_key_id: AKIAJXBOVBKZSHZ2XRGA
+secret_access_key: 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
+remote_path: /                            # relative path on bucket where files should be copied.
+
+# region: us-east-1                       # Region where your bucket is located.
+delete: true                            # Remove files from destination which do not match source files.
+# verbose: true                           # Print out all file operations.
