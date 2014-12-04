@@ -1,0 +1,33 @@
+# Site settings
+title: Chrisanthropic
+email: 
+
+description: > # this means to ignore newlines until "baseurl:"
+  Playing with things and documenting it.
+  
+baseurl: ""
+url: "http://www.chrisanthropic.com"
+
+# Exclude our ruby stuff
+exclude: [.bundle, bin, vendor]
+
+twitter_username:
+github_username: chrisanthropic
+
+# Google Analytics
+google_universal_analytics: UA-57294441-1
+google_universal_analytics_cookiedomain: auto
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+destination: _site
+
+permalink: /blog/:year/:title
+
+# Navigation
+pages_list:
+  About: '/'
+  Blog: '/blog'
