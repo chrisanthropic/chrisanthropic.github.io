@@ -3,4 +3,4 @@ _site
 .bundle
 bin
 vendor
-deploy.yml
+_deploy.yml
