@@ -4,3 +4,4 @@ _site
 bin
 vendor
 _deploy.yml
+s3_website.yml
