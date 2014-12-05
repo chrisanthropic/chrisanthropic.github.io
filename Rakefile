@@ -9,9 +9,8 @@ require "reduce"
 
 desc "build the site"
 task :build do
-  sh "bundle exec jekyll build"
+  system "bundle exec jekyll build"
   Rake::Task[:minify].execute
-  Rake::Task[:gzip_html].execute
 end
 
 ##############
@@ -23,8 +22,8 @@ end
 
 desc "deploy the site"
 task :deploy do
-  sh "bundle exec s3_website push"
-  Rake::Task[:notify].execute
+  system "bundle exec octopress deploy"
+  system "bundle exec rake notify"
 end
 
 ##############
