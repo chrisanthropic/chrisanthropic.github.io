@@ -25,11 +25,24 @@ I'm assuming that you're not *migrating* from Octopress 2.0 but are starting com
 
 ```
 source "https://rubygems.org"
-gem 'octopress', '~> 3.0.0.rc.15' 
+gem 'octopress', '~> 3.0.0.rc.15'
+gem 'rake'
+gem 'octopress-deploy'
+gem 'aws-sdk'
 ```
 
-* Run `bundle`
-* Run `octopress init`
+* Add these to your `.gitignore`
+```
+_deploy.yml
+.bundle
+bin
+vendor
+```
+* Run `bundle install --binstubs --path=vendor`
+  * This installs all of the required ruby gems to a subdirectory here, making it easier to manage per project.
+* Run `bundle exec octopress init`
+* Add this to your `_config.yml` so the Ruby stuff is ignored when builing your site
+  `exclude: [.bundle, bin, vendor]`
 
 ## Set up Github deployment
 1. Create your Github-pages repo via Github

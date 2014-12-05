@@ -9,7 +9,7 @@ baseurl: ""
 url: "http://www.chrisanthropic.com"
 
 # Exclude our ruby stuff
-exclude: [.bundle, bin, vendor]
+exclude: [.bundle, bin, vendor, Gemfile, Gemfile.lock, Rakefile]
 
 twitter_username:
 github_username: chrisanthropic
