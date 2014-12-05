@@ -23,7 +23,7 @@ end
 
 desc "deploy the site"
 task :deploy do
-  system "bundle exec octopress deploy"
+  system "bundle exec s3_website push"
   system "bundle exec rake notify"
 end
 

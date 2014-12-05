@@ -20,15 +20,16 @@ Below are the steps I took to add a few optimization tasks to my blank Rakefile.
 * Notify Google and Yahoo when the site is deployed
   * This one took me a bit, but I was trying to reproduce the 'Ping Service' that's included in Wordpress
 
-#### _config.yml
-Jekyll 2.0+ has full Sass support so we can use it to minify our CSS when Jekyll builds the site, just by adding a couple of lines to our `_config.yml`
+### _config.yml
+Jekyll 2.0+ has full Sass support so we can use it to minify our CSS when Jekyll builds the site, just by adding a couple of lines to our _config.yml.
+
 ```
 # Compress our CSS
-sass:
+  sass:
     style: :compressed
 ```
 
-#### Gemfile
+### Gemfile
 
 * First I add some gems to my Gemfile since they're used for the minification and optimization
 ```
