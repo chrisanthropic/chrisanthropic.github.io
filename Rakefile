@@ -9,6 +9,7 @@ require "html_compressor"
 
 desc "build the site"
 task :build do
+  system "bundle exec compass compile"
   system "bundle exec jekyll build"
   system "bundle exec rake minify_html"
   system "bundle exec rake optimizeimages"

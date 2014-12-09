@@ -28,8 +28,8 @@ destination: _site
 permalink: /blog/:year/:title
 
 # Compress our Css
-sass:
-    style: :compressed
+#sass:
+#    style: :compressed
 
 # Navigation
 pages_list:

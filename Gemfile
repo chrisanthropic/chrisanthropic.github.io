@@ -4,3 +4,5 @@ gem "rake"
 gem "s3_website"
 gem 'mini_magick'
 gem 'html_compressor'
+gem 'compass'
+gem 'compass-core'
