@@ -2,6 +2,6 @@ _site
 .sass-cache
 .bundle
 bin
-vendor
+/vendor/ruby
 _deploy.yml
 s3_website.yml
