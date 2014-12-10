@@ -1,0 +1,248 @@
+/* Some stylesheet reset */
+#nav, #nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav #toggleMenu, #nav #hideMenu {
+	display: none;
+}
+
+/* The main navigation bar */
+#nav {
+	position: relative;
+	display: block;
+	height: 44px;
+	width: 100%; /* The menu will take the width of its container */
+	border-radius: 3px;
+	background: #272727;
+}
+
+#nav>li {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+/* The main navigation links */
+#nav>li>a {
+	/* Layout */
+	display: block;
+	padding: 13px 22px;
+	border-color: #aaa;
+
+	/* Typography */
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	color: #aaa;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	/* Transitions */
+	-webkit-transition: color .2s ease-in, border-top-color .2s ease-in;
+	-ms-transition: color .2s ease-in, border-top-color .2s ease-in;
+	-moz-transition: color .2s ease-in, border-top-color .2s ease-in;
+	-o-transition: color .2s ease-in, border-top-color .2s ease-in;
+	transition: color .2s ease-in, border-top-color .2s ease-in;
+}
+
+/* The hover state of the links */
+#nav>li:hover>a {
+	color: #fff;
+	border-top-color: #fff;
+}
+
+#nav>li.dropdown>a {
+	padding-right: 28px;
+}
+
+/* The arrow indicating a dropdown menu */
+.dropdown>a::after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 0;
+	width: 0;
+	border: 4px solid transparent;
+	border-top-color: inherit;
+	right: 11px;
+	top: 21px;
+}
+
+/*  The submenus */
+#nav ul {
+	display: block;
+	position: absolute;
+	top: 43px;
+	left: -9999px;
+	opacity: 0;
+	background: #272727;
+	cursor: pointer;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-webkit-transition: opacity .22s ease-in;
+	-ms-transition: opacity .22s ease-in;
+	-moz-transition: opacity .22s ease-in;
+	-o-transition: opacity .22s ease-in;
+	transition: opacity .22s ease-in;
+}
+
+#nav ul li {
+	display: block;
+	position: absolute;
+	height: 0px;
+	-webkit-transition: height .15s ease-in;
+	-ms-transition: height .15s ease-in;
+	-moz-transition: height .15s ease-in;
+	-o-transition: height .15s ease-in;
+	transition: height .15s ease-in;
+}
+
+/* The submenu appears when its parent is hovered */
+#nav>li:hover>ul {
+	left: 0px;
+	opacity: 1;
+}
+
+#nav li:hover>ul>li {
+	position: relative;
+	height: 31px;
+}
+
+/* The submenu links */
+#nav ul li a {
+	/* Layout */
+	display: block;
+	padding: 7px 12px 7px 22px;
+	width: 130px;
+
+	/* Typography */
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: #aaa;
+	font-weight: 400;
+	
+	/* Background & effects */
+	background: #272727;
+	-webkit-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	-ms-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	-moz-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	-o-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	transition: color .2s ease-in, border-left-color .2s ease-in;;
+}
+
+/* Rounded corners for the last submenu link */
+#nav ul>li:last-child>a {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+/* Changing the link color on hover */
+#nav ul li:hover>a {
+	color: #fff;
+}
+
+.nav ul ul {
+	display: none;
+}
+
+/* Styling for mobile devices */
+@media screen and (max-width: 768px) {
+	#nav {
+		width: 100%;
+		max-width: 768px;
+		height: auto;
+	}
+
+	#nav li {
+		float: none;
+		padding: 0 10px;
+		display: none;
+	}
+
+	#nav>li>a {
+		padding: 8px 10px;
+	}
+
+	.dropdown>a::after {
+		display: none;
+	}
+
+	#nav ul {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: auto;
+		opacity: 1;
+		clear: both;
+	}
+
+	#nav ul li, #nav>li:hover>ul>li {
+		height: auto;
+		position: relative;
+
+	}
+
+	#nav ul li a {
+		padding: 5px 10px;
+		width: auto;
+	}
+
+	#nav #toggleMenu {
+		display: block;
+	}
+
+	#nav #toggleMenu>a, #nav #hideMenu>a {
+		padding: 13px 10px;
+		z-index: 1;
+	}
+
+	#nav:target li {
+		display: block;
+	}
+
+	#nav:target #toggleMenu {
+		display: none;
+	}
+
+	#nav:target #hideMenu {
+		display: block;
+		background: rgba(0, 0, 0, .3);
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+
+	#nav #hideMenu>a {
+		color: #fff;
+	}
+
+	#toggleMenu>a::after, #hideMenu>a::after {
+		position: absolute;
+		content: "";
+		right: 20px;
+		top: 16px;
+		height: 3px;
+		width: 20px;
+		border-bottom: 2px solid $grey-color;
+		z-index: 1;
+	}
+
+	#toggleMenu>a::before, #hideMenu>a::before {
+		position: absolute;
+		content: "";
+		right: 20px;
+		top: 24px;
+		height: 3px;
+		width: 20px;
+		border-bottom: 2px solid $grey-color;
+		z-index: 1;
+	}
+
+	#hideMenu>a::after, #hideMenu>a::before {
+		border-color: #fff;
+	}
+
+} 

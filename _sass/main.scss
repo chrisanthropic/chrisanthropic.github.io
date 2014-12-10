@@ -1,11 +1,20 @@
 @charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
+// Zurb Foundation Stuff
 @import "settings";
 @import "foundation/components/grid";
 @import "foundation/components/visibility";
+
+// Variables
 @import "variables";
-@import "animenu/style";
+
+// Navigation Menu
+//@import "animenu/style";
+@import "navigation";
+
+// Core Layout
 @import "base";
 @import "layout";
+
+// Misc.
 @import "syntax-highlighting";
