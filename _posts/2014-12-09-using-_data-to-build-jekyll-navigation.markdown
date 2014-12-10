@@ -51,15 +51,19 @@ Here's what I did:
 	      <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
 	    {% endfor %}
 	  </ul>
+	{% elsif nav.title == page.title %}
+	  <li class="active"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
 	{% else %} 
 	<li>
-	  <a href="{{ site.url }}{{ nav.href }}">{{ nav.title }}</a>
+	  <a href="{{ site.url }}{{ nav.href }}">{{ nav.title }}</a></li>
       {% endif %}
-	</li>
     {% endfor %}
   </ul>
-</nav>
+</nav> 
 {% endraw %}
 ```
+
+* Note - The active page will inherit the 'active' pseudo class so you can style it accordingly. Here's my sample:
+  `.animenu ul li.active a { border-bottom: thick solid #991F1F; }`
 
 Now any time you want to update your navigation just edit the `_data/nav.yml` file and rebuild your site.
