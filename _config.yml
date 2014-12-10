@@ -26,8 +26,3 @@ kramdown:
 destination: _site
 
 permalink: /blog/:year/:title
-
-# Navigation
-pages_list:
-  About: '/'
-  Blog: '/blog'

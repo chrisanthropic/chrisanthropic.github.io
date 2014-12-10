@@ -1,12 +1,21 @@
 <nav class="animenu">	
   <input type="checkbox" id="button">
-  <label for="button" onclick>Menu</label>
-    <ul>
-      <li>
-	<a href="{{ site_url }}/">Home</a>
-      </li>
-      <li>
-	<a href="{{ site_url }}/blog">Blog</a>
-      </li>
-    </ul>
-</nav>
+  <label for="button" onclick>Menu</label> 
+  <ul>
+    {% for nav in site.data.nav %}
+      {% if nav.subcategories != null %}
+	<li>
+	  <a href="{{ site.url }}{{ nav.url }}">{{ nav.title }} &#x25BC;</a>
+	  <ul>
+	    {% for subcategory in nav.subcategories %}
+	      <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+	    {% endfor %}
+	  </ul>
+	{% else %} 
+	<li>
+	  <a href="{{ site.url }}{{ nav.href }}">{{ nav.title }}</a>
+      {% endif %}
+	</li>
+    {% endfor %}
+  </ul>
+</nav> 
