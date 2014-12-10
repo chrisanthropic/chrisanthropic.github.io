@@ -35,8 +35,8 @@ $on-laptop:        800px;
 
 // animenu navbar variables
 $subMenuItemWidth: 175px;           // Minimum width for submenus' items
-$baseMenuBackground: $brand-color;          // Base color theme
-$secondaryMenuBackground: $grey-color;  // Secondary color (highlights, triangles...)
+$baseMenuBackground: #111;          // Base color theme
+$secondaryMenuBackground: #111;  // Secondary color (highlights, triangles...)
 $baseMenuColor: #999;               // Proper menu items color
 $gutter: 1em;                       // Base gutter
 $input: "input[type=checkbox]";     // Checkbox hack selector

@@ -1,15 +1,7 @@
 @import "compass/css3";
 
-// Variables
-$subMenuItemWidth: 175px;			// Minimum width for submenus' items
-$baseMenuBackground: #111;			// Base color theme
-$secondaryMenuBackground: #0186ba;	// Secondary color (highlights, triangles...)
-$baseMenuColor: #999;				// Proper menu items color
-$gutter: 1em;						// Base gutter
-$input: "input[type=checkbox]";  	// Checkbox hack selector
-
 // Menu background mixin
-@mixin menu-background($color, $menu-gradient: true) {
+@mixin menu-background($color, $menu-gradient: false) {
 	background-color: $color;
 	@if $menu-gradient == true {
 		@include background-image(linear-gradient(rgba(255, 255, 255, .2),
