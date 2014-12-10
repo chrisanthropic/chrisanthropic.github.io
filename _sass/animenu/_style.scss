@@ -12,20 +12,6 @@
 	}	
 }
 
-// Menu background mixin
-// The $size argument specifies the actual size of the triangle
-// The $shift-left helps on horizontal positioning.
-@mixin pseudo-triangle($size, $shift-left) {
-	&:after {
-		content: '';
-		position: absolute;
-		left: $shift-left * $gutter;
-		top: -$size * 2;
-		border: $size solid transparent;
-		border-bottom-color: inherit;
-	}
-}
-
 // Shortest clearfix. Ever. IE8+. 
 // http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
 %cf:after {
@@ -130,7 +116,6 @@ body {
 								0 2px 0 lighten($baseMenuBackground, 25%));
 			&:first-child > a {
 				@include border-radius(3px 3px 0 0);
-				@include pseudo-triangle(6px, 4);
 			}
 			&:last-child {
 				@include box-shadow(none);

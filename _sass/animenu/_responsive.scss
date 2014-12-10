@@ -41,7 +41,6 @@
 			padding: $gutter / 4;
 			@include box-shadow(none);
 			@include menu-background($baseMenuBackground, false);
-			@include pseudo-triangle(6px, 2);
 			@extend %revert-list;
 			li {
 				display: block;
