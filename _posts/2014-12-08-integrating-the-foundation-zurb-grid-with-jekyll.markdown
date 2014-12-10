@@ -15,7 +15,24 @@ I make a decent amount of sites for friends and non-profits and the benefits of 
 
 That being said, I use very little of Zurb's stuff so for now I'm just starting with the grid and visibility classes. Here's how I did it.
 
-### Get Zurb's scss
+### With Compass
+This is an update to my original post since I've started using Compass. If you don't use Compass you can still follow the instructions in the 'Without Compass' section.
+
+* clone the bower-foundation repo into your _sass directory
+  `git clone git@github.com:zurb/bower-foundation.git`
+* create a new subdirectory in your _sass directory called `foundation`
+* copy the contents of `bower-foundation/scss/foundation` to your new subdirectory
+  * this should include `_functions.scss`, `_settings.scss`, and a directory named `components`
+* You can now @import any of the zurb scss stuff from your `css/main.scss` file. For now I'm just importing the grid and visibility:
+```
+@import "foundation/components/grid";
+@import "foundation/components/visibility";
+```
+  * Note - grid will automatically @import `foundation/components/global` which @imports `foundation/components/fuctions
+
+### Without Compass
+Here's the first way I did it, before I integrated compass into my Jekyll site.
+
 * Create a folder in your _sass directory called 'foundation'
 * Git clone the 'bower_foundation' repo anywhere on your computer
   `git clone git@github.com:zurb/bower-foundation.git`

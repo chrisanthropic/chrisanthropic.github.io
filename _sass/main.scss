@@ -2,7 +2,8 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "settings";
-@import "foundation/grid";
+@import "foundation/components/grid";
+@import "foundation/components/visibility";
 @import "variables";
 @import "base";
 @import "layout";
