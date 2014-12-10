@@ -39,6 +39,34 @@ end
 * NOTE - compression settings are no longer set in _config.yml, you'll need to add the following line to `config.rb` in oroder to compress css
   `output_style = :compressed`
 
+* Update rakefile to run compass watch and jekyll serve together
+
+```
+##############
+#   Develop  #
+##############
+
+# Useful for development
+# It watches for chagnes and updates when it finds them
+
+desc "Watch the site and regenerate when it changes"
+task :watch do
+  puts "Starting to watch source with Jekyll and Compass."
+  system "compass compile" unless File.exist?("css/main.css")
+  system "jekyll build"
+  jekyllPid = Process.spawn("jekyll serve --watch")
+  compassPid = Process.spawn("compass watch")
+
+  trap("INT") {
+    [jekyllPid, compassPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+    exit 0
+  }
+
+  [jekyllPid, compassPid].each { |pid| Process.wait(pid) }
+end
+```
+* Now you can run `bundle exec rake watch` and it runs compass watch & jekyll serve together.
+
 Now you can use Compass mixins and import partials by adding `@import compass/blahblahblah` to your _sass/main.scss file.
 Running `bundle exec rake build` will then run `compass compile` to create your css/main.scss file, followed by `jekyll build` which will move that css/main.scss to _site/css/main.css
 

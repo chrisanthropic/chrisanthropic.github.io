@@ -50,7 +50,9 @@ Here's what I did:
 * add contents of animenu/sass to your Jekyll site at _sass/animenu
   * don't forget to add `@import "animenu/style";` to your _sass/main.scss
 * edit default layout to use _includes/navigation.html
-  `{% include navigation.html %}`
+```
+{% raw %} {% include navigation.html %} {% endraw %}
+```
 * run `bundle exec rake build`
 
 You now have a good looking responsive navigation menu that supports submenus and is Javascript free!
