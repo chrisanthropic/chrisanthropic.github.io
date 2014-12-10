@@ -27,10 +27,6 @@ destination: _site
 
 permalink: /blog/:year/:title
 
-# Compress our Css
-#sass:
-#    style: :compressed
-
 # Navigation
 pages_list:
   About: '/'

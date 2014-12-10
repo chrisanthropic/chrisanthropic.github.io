@@ -36,6 +36,8 @@ task :build do
 end
 ```
 * Run `bundle exec rake build`
+* NOTE - compression settings are no longer set in _config.yml, you'll need to add the following line to `config.rb` in oroder to compress css
+  `output_style = :compressed`
 
 Now you can use Compass mixins and import partials by adding `@import compass/blahblahblah` to your _sass/main.scss file.
 Running `bundle exec rake build` will then run `compass compile` to create your css/main.scss file, followed by `jekyll build` which will move that css/main.scss to _site/css/main.css
