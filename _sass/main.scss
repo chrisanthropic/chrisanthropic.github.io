@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 // Zurb Foundation Stuff
-@import "settings";
 @import "foundation/components/grid";
 @import "foundation/components/visibility";
 
@@ -9,7 +8,6 @@
 @import "variables";
 
 // Navigation Menu
-//@import "animenu/style";
 @import "navigation";
 
 // Core Layout
@@ -17,4 +15,3 @@
 @import "layout";
 
 // Misc.
-@import "syntax-highlighting";

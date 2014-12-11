@@ -226,7 +226,7 @@
 		top: 16px;
 		height: 3px;
 		width: 20px;
-		border-bottom: 2px solid $grey-color;
+		border-bottom: 2px solid $complimentary-color;
 		z-index: 1;
 	}
 
@@ -237,12 +237,11 @@
 		top: 24px;
 		height: 3px;
 		width: 20px;
-		border-bottom: 2px solid $grey-color;
+		border-bottom: 2px solid $complimentary-color;
 		z-index: 1;
 	}
 
 	#hideMenu>a::after, #hideMenu>a::before {
 		border-color: #fff;
 	}
-
 } 
