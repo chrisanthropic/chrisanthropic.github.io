@@ -81,12 +81,13 @@ html, body {
     display: inline;
   }
   
-.socials {
-  height: auto;
-  > li a:hover {
-   color: $primary-color !important; 
+  .socials {
+    height: auto;
+    
+    > li a:hover {
+      color: $primary-color !important; 
+    }
   }
-}
 }
 
 .socials {
@@ -104,6 +105,9 @@ text-align: right;
 list-style-type: none;
 
   > li a{
+   float: right;
+   display: block;
+   padding: 0px 22px;
    color: $secondary-color;
    text-decoration: none;
   }
