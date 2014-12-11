@@ -49,3 +49,32 @@
 #footer {
   background-color: $footer-color;
 }
+
+// Navbar
+.navbar {
+  background-color: $navbar-color;
+}
+
+.socials {
+display: block;
+padding: 13px 22px;
+margin-bottom: 0px;
+border-color: #aaa;
+font-family: "Open Sans", Helvetica, Arial, sans-serif;
+font-size: 13px;
+font-weight: 700;
+color: #aaa;
+text-transform: uppercase;
+text-decoration: none;
+text-align: right;
+list-style-type: none;
+
+  > li a{
+   color: $secondary-color;
+   text-decoration: none;
+  }
+  
+  > li a:hover {
+   color: $complimentary-color; 
+  }
+}

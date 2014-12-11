@@ -16,7 +16,7 @@
 	height: 44px;
 	width: 100%; /* The menu will take the width of its container */
 	border-radius: 3px;
-	background: #272727;
+	background: $navbar-color;
 }
 
 #nav>li {
@@ -78,7 +78,7 @@
 	top: 43px;
 	left: -9999px;
 	opacity: 0;
-	background: #272727;
+	background: $navbar-color;
 	cursor: pointer;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
@@ -126,7 +126,7 @@
 	font-weight: 400;
 	
 	/* Background & effects */
-	background: #272727;
+	background: $navbar-color;
 	-webkit-transition: color .2s ease-in, border-left-color .2s ease-in;;
 	-ms-transition: color .2s ease-in, border-left-color .2s ease-in;;
 	-moz-transition: color .2s ease-in, border-left-color .2s ease-in;;

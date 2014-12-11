@@ -1,8 +1,10 @@
-<nav>	
-  <ul id="nav">
+<nav class="navbar">
+  <nav class="row">
+  <section class="columns large-6 left">
+    <ul id="nav">
+
     <li id="toggleMenu"><a href="#nav">Menu</a></li>
     <li id="hideMenu"><a href="toggleMenu">Menu</a></li>
-
     {% for nav in site.data.nav %}
       {% if nav.subcategories != null %}
 	<li class="dropdown">
@@ -20,4 +22,13 @@
       {% endif %}
     {% endfor %}
   </ul>
-</nav> 
+  </section>
+  <section class="columns hide-for-medium-down large-6 right">
+    <ul class="socials">
+      <li>
+	<a href="https://github.com/chrisanthropic/">Github</a>
+      </li>
+    </ul>  
+  </section>
+</nav>
+</nav>
