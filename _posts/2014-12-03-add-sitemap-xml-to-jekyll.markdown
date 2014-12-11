@@ -71,7 +71,8 @@ sitemap:
     {% endunless %}
   {% endfor %}
 </urlset>
-{% endraw %}```
+{% endraw %}
+```
 
 * Add the following configurable settings to your templates:
 

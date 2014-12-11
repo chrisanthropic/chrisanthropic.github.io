@@ -25,4 +25,8 @@ kramdown:
 
 destination: _site
 
+# Compress our Css
+sass:
+    style: :compressed
+
 permalink: /blog/:year/:title
