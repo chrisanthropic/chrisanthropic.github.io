@@ -44,10 +44,30 @@
 }
 
 // Footer
-@import "compass/layout/sticky-footer";
-@include sticky-footer($footer-height);
 #footer {
   background-color: $footer-color;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -$footer-height; 
+}
+.wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .wrap:after {
+  height: $footer-height; 
+}
+.site-footer {
+  background: $footer-color;
 }
 
 // Navbar
