@@ -1,11 +1,39 @@
-// Pages
+// Wrap
+.wrap {
+  min-height: 100%;
+  margin-bottom: -$footer-height; 
+}
 
+.wrap:after {
+  content: "";
+  display: block;
+}
+
+
+// Pages
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spacing-unit;
 }
 
 .page-heading {
     font-size: 20px;
+}
+
+// Posts
+
+.post-header {
+    margin: $spacing-unit;
+}
+
+.post-title {
+    font-size: 2em;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+  padding: 0 $spacing-unit $spacing-unit;
 }
 
 .post-list {
@@ -27,42 +55,11 @@
     font-size: 24px;
 }
 
-// Posts
-
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-}
-
 // Footer
 #footer {
   background-color: $footer-color;
 }
 
-* {
-  margin: 0;
-}
-html, body {
-  height: 100%;
-}
-.wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -$footer-height; 
-}
-.wrap:after {
-  content: "";
-  display: block;
-}
 .site-footer, .wrap:after {
   height: $footer-height; 
 }

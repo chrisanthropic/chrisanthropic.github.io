@@ -24,10 +24,12 @@ This is an update to my original post since I've started using Compass. If you d
 * copy the contents of `bower-foundation/scss/foundation` to your new subdirectory
   * this should include `_functions.scss`, `_settings.scss`, and a directory named `components`
 * You can now @import any of the zurb scss stuff from your `css/main.scss` file. For now I'm just importing the grid and visibility:
+
 ```
 @import "foundation/components/grid";
 @import "foundation/components/visibility";
 ```
+
   * Note - grid will automatically @import `foundation/components/global` which @imports `foundation/components/fuctions
 
 ### Without Compass
@@ -41,10 +43,12 @@ Here's the first way I did it, before I integrated compass into my Jekyll site.
 * Open `_sass/foundation/global.scss` and edit the `@import ../"functions";` line to read `@import "functions"` since we moved it into the same directory.
 * Delete the `bower-foundation` directory, you don't need it anymore.
 * You can now @import any of the zurb scss stuff from your `css/main.scss` file. For now I'm just importing the grid and visibility:
+
 ```
 @import "foundation/grid";
 @import "foundation/visibility";
 ```
+
   * Note - grid will automatically @import `foundation/global` which @imports `foundation/fuctions`
 
 That's it. Now you have access to Zurb's grid without any of the JS or other crap that you don't need. You can update at any time by replacing the contents of `_sass/foundation` with the newest files from the zurb `bower-foundation` repo.

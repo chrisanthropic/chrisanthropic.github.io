@@ -18,6 +18,7 @@ Most of the steps were adapted from here [http://blog.mindthecloud.com/2014/08/3
 * Login to AWS S3 and create a bucket called `www.YOURSITE.com` (This is important for CNAME/DNS record stuff)
   * Make sure you select the `US Standard` region
 * Create a new policy for the bucket that gives everyone read-only access so they can view the site
+
 ```
 {
 	"Version": "2008-10-17",
@@ -32,6 +33,7 @@ Most of the steps were adapted from here [http://blog.mindthecloud.com/2014/08/3
 	]
 }
 ```
+
 * Select the bucket you created and choose `options`
 * Go to the `Static Website Hosting` tab and enable it.
 * Enter `index.html` for `index document` and `404.html` for `error document`
@@ -40,6 +42,7 @@ Most of the steps were adapted from here [http://blog.mindthecloud.com/2014/08/3
   * Create new user
   * Choose `attach user policy`
   * Choose `custom policy` and enter the following code:
+
 ```
 {
   "Statement": [
@@ -56,6 +59,7 @@ Most of the steps were adapted from here [http://blog.mindthecloud.com/2014/08/3
   ]
 }
 ```
+
 * The above policy gives the user you created full access to the bucket you created to host your site. This is the user that will be used to deploy your site.
 
 ## setup octopress-deploy

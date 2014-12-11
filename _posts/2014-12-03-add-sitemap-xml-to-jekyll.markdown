@@ -12,7 +12,9 @@ sitemap:
 I don't like using plugins unless absolutely necessarry so I was happy to find a simple way to create a sitemap without one. The instructions are taken from this site: [http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/](http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/)
 
 * Create a `sitemap.xml` file with the following content:
+
 ```
+{% raw %}
 ---
 layout: null
 sitemap:
@@ -69,9 +71,10 @@ sitemap:
     {% endunless %}
   {% endfor %}
 </urlset>
-```
+{% endraw %}```
 
 * Add the following configurable settings to your templates:
+
 ```
 sitemap:
   lastmod: {{ date }}

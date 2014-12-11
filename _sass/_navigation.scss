@@ -40,7 +40,7 @@
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 700;
-	color: #aaa;
+	color: $secondary-color;
 	text-transform: uppercase;
 	text-decoration: none;
 	
@@ -54,7 +54,7 @@
 
 // Hover state of the links
 #nav>.primary-nav>li:hover>a {
-	color: #fff;
+	color: $navbar-hover-color;
 	border-top-color: #fff;
 }
 
@@ -126,7 +126,7 @@
 	font-family: "Open Sans", sans-serif;
 	font-size: 12px;
 	text-decoration: none;
-	color: #aaa;
+	color: $secondary-color;
 	font-weight: 400;
 	
 	/* Background & effects */
@@ -140,7 +140,7 @@
 
 // Change the link color on hover
 #nav .primary-nav ul li:hover>a {
-	color: #fff;
+	color: $navbar-hover-color;
 }
 
 .nav ul ul {
@@ -151,6 +151,11 @@
 // Socials / right menu
 #nav>.right.primary-nav li a{
   padding: 13px 8px;
+  color: $socials-text-color;
+}
+
+#nav>.right.primary-nav li:hover a{
+  color: $socials-hover-color;
 }
 
 // Styling for mobile devices
@@ -221,7 +226,7 @@
 	}
 
 	#nav #hideMenu>a {
-		color: #fff;
+		color: $secondary-color;
 	}
 
 	#toggleMenu>a::after, #hideMenu>a::after {
@@ -231,8 +236,8 @@
 		top: 21px;
 		height: 9px;
 		width: 20px;
-		border-top: 2px solid $navbar-icon-color;
-		border-bottom: 2px solid $navbar-icon-color;
+		border-top: 2px solid $secondary-color;
+		border-bottom: 2px solid $secondary-color;
 		z-index: 1;
 	}
 
@@ -243,12 +248,12 @@
 		top: 13px;
 		height: 3px;
 		width: 20px;
-		border-bottom: 2px solid $navbar-icon-color;
+		border-bottom: 2px solid $secondary-color;
 		z-index: 1;
 	}
 
 	#hideMenu>a::after, #hideMenu>a::before {
-		border-color: #fff;
+		border-color: $secondary-color;
 	}
 	
 	.navbar {
@@ -257,7 +262,7 @@
 	}
  
 	#nav>.right.primary-nav  {
-	  background-color: lighten($primary-color, 5%);
+	  background-color: lighten($navbar-color, 10%);
 	}
   
 	#nav>.right.primary-nav li{
