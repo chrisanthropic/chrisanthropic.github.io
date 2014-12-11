@@ -75,6 +75,20 @@ html, body {
   background-color: $navbar-color;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    background-color: $navbar-color;
+    display: inline;
+  }
+  
+.socials {
+  height: auto;
+  > li a:hover {
+   color: $primary-color !important; 
+  }
+}
+}
+
 .socials {
 display: block;
 padding: 13px 22px;

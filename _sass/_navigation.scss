@@ -223,10 +223,11 @@
 		position: absolute;
 		content: "";
 		right: 20px;
-		top: 16px;
-		height: 3px;
+		top: 21px;
+		height: 9px;
 		width: 20px;
-		border-bottom: 2px solid $complimentary-color;
+		border-top: 2px solid $navbar-icon-color;
+		border-bottom: 2px solid $navbar-icon-color;
 		z-index: 1;
 	}
 
@@ -234,10 +235,10 @@
 		position: absolute;
 		content: "";
 		right: 20px;
-		top: 24px;
+		top: 13px;
 		height: 3px;
 		width: 20px;
-		border-bottom: 2px solid $complimentary-color;
+		border-bottom: 2px solid $navbar-icon-color;
 		z-index: 1;
 	}
 
