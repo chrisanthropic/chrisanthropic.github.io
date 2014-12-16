@@ -11,7 +11,6 @@
 
 // Navbar wrap
 .navbar {
-  height: $navbar-height;
   background-color: $navbar-color;
 }
 
@@ -20,6 +19,7 @@
 	z-index: 2;
 	position: relative;
 	display: block;
+	height: 44px;
 	background: $navbar-color;
 }
 
@@ -32,14 +32,13 @@
 // Main navigation links
 #nav>.primary-nav>li>a {
 	/* Layout */
-	line-height: $navbar-height;
 	display: block;
-	padding: 0 22px;
+	padding: 13px 22px;
 	border-color: #aaa;
 
 	/* Typography */
-	font-family: $navbar-font-family;
-	font-size: $navbar-font-size;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 13px;
 	font-weight: 700;
 	color: $secondary-color;
 	text-transform: uppercase;
@@ -73,14 +72,14 @@
 	border: 4px solid transparent;
 	border-top-color: inherit;
 	right: 11px;
-	top: ($navbar-height / 2);
+	top: 21px;
 }
 
 // Submenus
 #nav .primary-nav ul {
 	display: block;
 	position: absolute;
-	top: $navbar-height;
+	top: 43px;
 	left: -9999px;
 	opacity: 0;
 	background: $navbar-color;
@@ -124,8 +123,8 @@
 	width: 130px;
 
 	/* Typography */
-	font-family: $navbar-font-family;
-	font-size: ($navbar-font-size * .92);
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
 	text-decoration: none;
 	color: $secondary-color;
 	font-weight: 400;
@@ -151,7 +150,7 @@
 
 // Socials / right menu
 #nav>.right.primary-nav li a{
-  padding: 0px 8px;
+  padding: 13px 8px;
   color: $socials-text-color;
 }
 
@@ -174,8 +173,7 @@
 	}
 
 	#nav>.primary-nav>li>a {
-		line-height: 45px;
-		padding: 0 10px;
+		padding: 8px 10px;
 	}
 
 	.dropdown>a::after {
@@ -204,13 +202,11 @@
 
 	#nav #toggleMenu {
 		display: block;
-		margin-right: -15px;
 	}
 
 	#nav #toggleMenu>a, #nav #hideMenu>a {
-		padding: 0px 10px;
+		padding: 13px 10px;
 		z-index: 1;
-		line-height: 45px;
 	}
 
 	#nav:target li {
@@ -226,7 +222,6 @@
 		background: rgba(0, 0, 0, .3);
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
-		padding-left: 25px;
 		margin: 0 -15px 0 -15px;
 	}
 
@@ -237,7 +232,7 @@
 	#toggleMenu>a::after, #hideMenu>a::after {
 		position: absolute;
 		content: "";
-		right: 35px;
+		right: 20px;
 		top: 21px;
 		height: 9px;
 		width: 20px;
@@ -249,7 +244,7 @@
 	#toggleMenu>a::before, #hideMenu>a::before {
 		position: absolute;
 		content: "";
-		right: 35px;
+		right: 20px;
 		top: 13px;
 		height: 3px;
 		width: 20px;
@@ -263,7 +258,6 @@
 	
 	.navbar {
 	  background-color: $navbar-color;
-	  height: 44px;
 	  display: inline;
 	}
  
