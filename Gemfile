@@ -6,3 +6,5 @@ gem "s3_website"
 gem 'mini_magick'
 gem 'html_compressor'
 gem 'sass', '~> 3.2.19'		#Zurb breaks with any sass above this for now
+gem 'image_optim'		#Optimizes our images
+gem 'image_optim_pack'		#Tools that image_optim uses

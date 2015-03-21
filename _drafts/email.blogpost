@@ -1,0 +1,13 @@
+create account with getsimpleform.com
+  - only requires email
+
+Keep your 2 api keys
+  - 1 is public and used for people to send emails to you
+  - 1 is private and is used to read the emails
+
+create akismet account
+  - note your api key
+
+Configure your email template via the getsimpleforms.com "form settings" page.
+
+Create your contact form on your website
