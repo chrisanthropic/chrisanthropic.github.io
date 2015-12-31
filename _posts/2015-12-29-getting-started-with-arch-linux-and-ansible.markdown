@@ -9,6 +9,10 @@ sitemap:
   exclude: 'no'
 ---
 
+**UPDATE**
+I created a tiny repo that expands on the basics of this post. You can check it out here: https://github.com/chrisanthropic/ansible-aws-template.
+**/UPDATE**
+
 I've been asked to play around with Ansible a bit for work. My first impressions have ranged from "it looks good so far" to "what the fuck does that mean?" I much prefer Chef's documentation.
 
 Here's a real quick-and-dirty "getting started" post mostly for my own memory. Chances are good that this isn't what you want, whoever you are, but if you're looking at using Ansible on an Arch Linux machine to manage a bunch of AWS resources, cool, let's do it.
