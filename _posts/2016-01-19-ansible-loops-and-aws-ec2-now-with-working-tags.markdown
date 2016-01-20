@@ -29,14 +29,17 @@ Lastly, I loop my 'tag' task for every security group in the variable.
 
 The main bit of code is here:
 
+{% raw %}
 ```
 - shell: aws ec2 describe-instances --query 'Reservations[*].Instances[*].SecurityGroups[*].GroupId' --filter Name=tag:Name,Values="{{ stack }}"_VM_*_"{{ env }}" --output text | uniq
   with_items: VMs
   register: groupIDs
 ```
+{% endraw %}
 
 And then my tag task is here (with the last line being the magic):
 
+{% raw %}
 ```
 # Add tags to the Security Group
 - ec2_tag:
@@ -50,6 +53,7 @@ And then my tag task is here (with the last line being the magic):
         owner: "{{ owner }}"
   with_items: groupIDs.results[0].stdout_lines
 ```
+{% endraw %}
 
 You can see the whole thing in action and the entire Ansible setup in the repo I created here:[https://github.com/chrisanthropic/ansible-aws-template](https://github.com/chrisanthropic/ansible-aws-template)
 
