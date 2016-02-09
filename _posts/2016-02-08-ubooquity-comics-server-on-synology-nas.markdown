@@ -28,10 +28,6 @@ _All of these commands will be run from your NAS so you'll need to SSH into your
 * `wget -O ubooquity.zip http://vaemendis.net/ubooquity/service/download.php`
 * `unzip -o ubooquity.zip && rm ubooquity.zip`
 
-**Make Ubooquity executable**
-
-* `chmod +x /var/packages/Ubooquity/Ubooquity.jar`
-
 **Set Ubooquity to start on boot**
 
 * `cd /etc/init`
