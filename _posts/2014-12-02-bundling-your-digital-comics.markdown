@@ -7,7 +7,7 @@ date: 2014-12-02T17:10:14-08:00
 I highly recommend using [ImageMagick](http://www.imagemagick.org/) and [mogrify](http://www.imagemagick.org/script/mogrify.php) for most of these tasks. Make sure you understand how to use these tools before running the commands since they will modify your images. All of the commands should be run from the terminal and you should be in the directory of files that you want to modify.
 
 ### Preparing your Images
-1. Make sure your images are using the CMYK colorspace
+1. Make sure your images are using the RGB colorspace since we're not printing them out
 2. The images can be any size but if they're not all the same size then opening/reading the comic will be slow and that sucks. I like 750x1150
   * You can resize all of your images using the `mogrify` command-line tool. If all of your images are .jpg, open a command line, cd to the location of your images and use the command below  
   `mogrify -resize 750 *.jpg`
