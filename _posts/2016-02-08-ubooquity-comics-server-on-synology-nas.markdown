@@ -31,13 +31,12 @@ _All of these commands will be run from your NAS so you'll need to SSH into your
 **Set Ubooquity to start on boot**
 
 * `cd /etc/init`
-* `wget http://vaemendis.net/ubooquity/misc/synology-tutorial/script/ubooquity.conf`
+* `wget https://gist.githubusercontent.com/chrisanthropic/2e0fc77dea449e2841dc/raw/a0741ec0a4144f2c60e140ca3036d720db726cbb/ubooquity.conf`
 * `chmod 755 ubooquity.conf`
 
 **Edit ubooquity.conf**
 
 * `sudo vi /etc/init/ubooquity.conf`
-* replace `exec /var/packages/Javablahblahblah` with `exec /var/packages/java7/target/jre/bin/java`
 * replace `-workdir "/volume1/Comics"` with the location of your comics shared folder
 * replace `httpd-user` with the name of the user with r/w permissions to your comics folder
   * If you're unsure who has what permissions on your shared folder, here's some [instructions](https://www.synology.com/en-global/knowledgebase/DSM/help/DSM/AdminCenter/file_share_privilege) to set it up/check.
