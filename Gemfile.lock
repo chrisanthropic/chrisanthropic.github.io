@@ -122,9 +122,12 @@ DEPENDENCIES
   html_compressor
   image_optim
   image_optim_pack
-  jekyll (~> 2.5.2)
+  jekyll
   mini_magick
-  octopress (~> 3.0.0.rc.15)
+  octopress
   rake
   s3_website
-  sass (~> 3.2.19)
+  sass
+
+BUNDLED WITH
+   1.12.4
