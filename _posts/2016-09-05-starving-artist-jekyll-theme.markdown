@@ -18,4 +18,4 @@ So, here it is: [Starving Artist Jekyll Theme](https://github.com/chrisanthropic
 
 It's released under the MIT license so it's freely available.
 
-[![Starving Artist Jekyll Theme Screenshot Thumbnail](/images/posts/screenshot.png)](http://chrisanthropic.github.io/starving-artist-jekyll-theme/)
+[![Starving Artist Jekyll Theme Screenshot Thumbnail](/images/posts/screenshot.jpg)](http://chrisanthropic.github.io/starving-artist-jekyll-theme/)
