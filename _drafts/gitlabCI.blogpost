@@ -1,0 +1,10 @@
+GitLabCi + Jekyll + S3
+
+# enable CI
+    - Project -> edit project -> Feature Visibility -> builds
+    
+# Create .gitlab-ci.yaml
+
+# Create s3_website.yml
+
+# Lambda (bonus)
