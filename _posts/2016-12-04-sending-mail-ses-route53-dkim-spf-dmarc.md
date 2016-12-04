@@ -105,7 +105,17 @@ Now it's time to set up our Custom MAIL FROM Domain. Essentially, this allows SE
 ## **SPF-DMARC**
 Ok, confession time. I've never done a lot of research into DMARC before and this project is no different. I skimmed the official docs as well as AWS docs and have a _working_ solution. If anyone knows of better configs or known issues, I'm all ears.
 
-This part is mostly from [AWS directly](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/mail-from-set.html) just in an easier to read format.
+**UPDATE**
+Thanks to user `inopinatus` on [Hacker News](https://news.ycombinator.com/item?id=13101926#13102127) for suggesting [https://dmarc.postmarkapp.com/](https://dmarc.postmarkapp.com/) as a DMARC aggregator to prevent annoyingly noisy DMARC status reports being emailed to you daily from multiple ISPs.
+
+- Go to [https://dmarc.postmarkapp.com/](https://dmarc.postmarkapp.com/) to create your free account
+  - Enter any email address to receive your DMARC status reports
+  - Enter your new subdomain in the **Send reports about this domain** field. Our example would be **newsletter.chrisanthropic.com**
+  ![DMARC](/images/posts/016-verify.jpg)
+
+- Now you should see a screen similar to this:
+  ![DMARC](/images/posts/017-verify.jpg)
+- Leave this tab/window/screen open and navigate to your AWS dashboard in another tab/window/screen.
 
 - Go to your AWS dash and navigate to the Route 53 dash
 - Go to **Hosted Zones** and click on your domain
@@ -114,8 +124,7 @@ This part is mostly from [AWS directly](https://docs.aws.amazon.com/ses/latest/D
   - Name: `_dmarc.newsletter`.yourdomain.com
   - Type: `TXT - Text`
   - TTL: 300/default is fine
-  - Value: `"v=DMARC1; p=none; rua=mailto:you@yourdomain.com"`
-    - Change **you@yourdomain.com** to a valid email address
+  - Value: `"COPY AND PASTE THE CONTENTS FROM THE PREVIOUS STEP"`
 - Click **Create**
 
 ## **WRAP-UP**
