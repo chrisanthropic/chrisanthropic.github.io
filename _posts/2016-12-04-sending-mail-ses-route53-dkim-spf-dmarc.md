@@ -13,7 +13,7 @@ permalink: sending-mail-ses-route53-dkim-spf-dmarc
 - [Verify a new Domain](#verify-a-new-domain)
 - [DKIM](#dkim)
   - [Generate DKIM DNS Entries](#generate-dkim-dns-entries)
-  - [Apply DNS Record Sets](#create-record-sets)
+  - [Apply DNS Record Sets](#apply-record-sets)
   - [Verification Emails](#verification-emails)
 - [Custom MAIL FROM domain](#custom-mail-from-domain)
 - [SPF / DMARC](#spf-dmarc)
