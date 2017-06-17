@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 gem 'jekyll'
-gem 'octopress'  
 gem "rake"
 gem "s3_website"
 gem 'mini_magick'
