@@ -4,7 +4,6 @@ title: "Scheduling Jekyll Posts with GitlabCI and AWS Lambda"
 sitemap:
   priority: 0.5
   exclude: 'no'
-permalink: scheduling-jekyll-posts-gitlabci-aws-lambda
 ---
 **Table of Contents**
 

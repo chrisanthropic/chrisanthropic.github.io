@@ -4,7 +4,6 @@ title: "Sending mail with AWS SES and Route53 (DKIM, SPF, and DMARC)"
 sitemap:
   priority: 0.5
   exclude: 'no'
-permalink: sending-mail-ses-route53-dkim-spf-dmarc
 ---
 **Table of Contents**
 
