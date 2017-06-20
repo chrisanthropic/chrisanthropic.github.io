@@ -10,7 +10,7 @@ sitemap:
 ---
 
 **UPDATE**
-I created a tiny repo that expands on the basics of this post. You can check it out here: https://github.com/chrisanthropic/ansible-aws-template.
+I created a tiny repo that expands on the basics of this post. You can check it out here: [https://github.com/chrisanthropic/ansible-aws-template](https://github.com/chrisanthropic/ansible-aws-template).
 **/UPDATE**
 
 I've been asked to play around with Ansible a bit for work. My first impressions have ranged from "it looks good so far" to "what the fuck does that mean?" I much prefer Chef's documentation.
