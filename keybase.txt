@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/ctarwater
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.chrisanthropic.com
+  * I am ctarwater (https://keybase.io/ctarwater) on keybase.
+  * I have a public key with fingerprint 517B 2F90 5644 60CA 65D3  F019 B571 8E2F 13BE 6844
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101217bb61b9dd69df0648594e80c5414ece794e55eb2346137dc1eb281767229f30a",
+      "fingerprint": "517b2f90564460ca65d3f019b5718e2f13be6844",
+      "host": "keybase.io",
+      "key_id": "b5718e2f13be6844",
+      "kid": "0101217bb61b9dd69df0648594e80c5414ece794e55eb2346137dc1eb281767229f30a",
+      "uid": "71035fc6fadde3b10269749b9036d319",
+      "username": "ctarwater"
+    },
+    "service": {
+      "hostname": "www.chrisanthropic.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1505774345,
+  "expire_in": 157680000,
+  "prev": "b4bbcc7a48ed50cb3de08eeff93c0f8d5d75c8f2159a7f136670b3574c1f1cc0",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMIyAnicrZJbSBRRGMfXa2mFEkFQUTRmJZqeszNnLiv1UNDdjOiK1jrnMruDNrPO
+zGomG0EUFCRBdKPEaiOjMFCEMLKLSi9KLz6FmZRUhKb5UEEX6YzUW4+dl3O+j//3
+O//v4+ublxbITtmb3dY6mpU+K6X/WTIeOPB0W1ajgG3aIIQahWo2c7EaylwvXG1S
+ISQACGAQKhjLEGuUyho1gCypSJOYCgiSoMQIU3iEEMNBUZKhqFAC+VuFiqwEg5oh
+Al0oEgzTijAn5piWx7GII4OGBpAsSTIguoyoaACoYaRAlQUNKGImq5LEC6O261dw
+c1h3WbFp8xwPwjP2/qH/z77jMzgFAhEZRDZ0SpmIIQjKmiJpWAOiTEWo+UKXOZZ+
+mHE18XSnXveYIySKBJ6uMwnzJ+u38kdSX19fTKKO6eqWF3XsmEmKiX2YY2KO7dnE
+ruGaqOfF3JDP8BpiM0UMh//gwti0KB8pr6hjjmvalhCCXEk80+dDBJCiSKKEigR2
+JGY6LGz6CqTIKuDH/4fV+QOUMCZE0SWVUQQIFikDKmOGoYkEGCpFVEFENYIQabrC
+xyzLCsAiUiQCDUgIEPwGay2bsyH3qUc40zUjlu7FHSYkep5WpgdSsgOZGan+rgWy
+s3L/bmClODvQ8yB3/tbRplNvmt8XHL3X/Xqyc+R0ZnleehK3lQ2OfM/o6myZN3kp
+52L3jbyeW127hse/J5q6r9/ccPbhbfNKfO6m9F544fne0icTPwdzNtC1E1eb846u
+XDzQcY4sMaYHflVZG0+2rrsSit9PVm8vh3d2jC1K27qiaqn9Jb6l49yCqUONx4s7
+IvsL9j/+VJj8Rk8Pwzmv+vOPj7qhoReVr752fRs+MliytHz6RHfi5e7mg5c/lq2v
+3VxSIR36Ibz+3LUpNeNZi7sm0n63fdn4rA991x6fPwb2LEzkd24eElbsfPvoSWnp
+6uYzWVP7jlVkFL5blZ/Zu+Va6dnlDfm0vSZCxyoeJH8DkWJBRg==
+=bM48
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ctarwater
+
+================================================================== 
