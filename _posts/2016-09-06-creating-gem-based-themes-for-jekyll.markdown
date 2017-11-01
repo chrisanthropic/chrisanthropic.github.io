@@ -71,7 +71,7 @@ Testing your Gem based theme is simple. Create a brand new Jekyll site and then 
 - Install Jekyll and Bundler
   - `gem install bundler`
 - Create a New Site
-  - `jekyl new mysite`
+  - `jekyll new mysite`
 - Move into that directory
   - `cd mysite`
 - Install Required Gems
