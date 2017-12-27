@@ -22,7 +22,7 @@ They're created by a simple bash script that:
 - uses the [http://shields.io/](http://shields.io/) API to create coverage badges
 - writes the coverage badges to an S3 bucket you specify
 
-The script expects that all of the resources managed by Terraform are tagged in a standard way; ie our example uses - "Terraform: True". In our example our Terraform code always writes a tag of "Terraform: True" when it creates a resource that supports tags. This is how we ensure that all Terraform managed resources are tagged uniformly. The expected tag is configurable via ENV VARS at the top of the script, it is the tag that the script uses to identify when a resource is managed by Terraform.
+The script expects that all of the resources managed by Terraform are tagged in a standard way; ie our example uses a `Terraform` tag, written by Terraform when it creates a resource that supports tags. This is how we ensure that all Terraform managed resources are tagged uniformly. The tag is configurable via ENV VARS at the top of the script.
 
 For now it checks the following AWS resources:
 - EC2 Instances
