@@ -1,5 +1,5 @@
-- title: "Home"
-  href: "/"
-
-- title: "Blog"
+- title: "blog"
   href: "/blog/"
+
+- title: "contact"
+  href: "/contact/"

@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Why my Gigabit switch was limiting my desktop to 100Mbps and how I fixed it."
-sitemap:
-  priority: 0.5
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 I've been slowly reworking my home network over the past few months and ran into a new problem today - my desktop, wired to a gigabit switch via Cat6 cabling, would never reach speeds above 100Mbps. Bypassing the switch resulted in the expected speeds that were double that.
 

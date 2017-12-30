@@ -1,29 +1,108 @@
 // Wrap
-.wrap {
-  min-height: 100%;
-  margin-bottom: -$footer-height; 
+  .wrap {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
+  }
+
+.wraptainer {
+   margin-top: $header-margin;   
 }
 
-.wrap:after {
-  content: "";
-  display: block;
+// Header
+#header {
+    padding: 0.9375rem 0;
+    background-color: $header-color;
+    z-index: 5;
 }
 
+.header-logo:hover {
+    opacity:.9;
+}
+
+ul > .header-nav > a {
+    color: $header-link-color;
+}
+
+ul > .header-nav > a:hover {
+    color: $header-link-hover-color 
+}
+
+ul > .header-nav > a:visited {
+    color: $header-link-color;
+}
+
+.site-header .menu .active > a {
+    background-color: $header-active-link-color;
+    color: $header-link-color;
+}
+
+.social-container {
+    margin: 0;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+// Containers
+.content_container {
+    flex: 1;
+    overflow: auto;
+    height: auto;
+    padding: .5rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+.biopic {
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    border-radius: 200px;
+    padding-left: 1em;
+}
+
+.bio {
+    padding-top: 2em;
+}
+
+.recent-posts {
+    font-size: 0.8rem;
+}
 
 // Pages
 .page-content {
-    padding: $spacing-unit;
+    padding: 0 1.2rem 1.2rem 1.2rem;
 }
 
 .page-heading {
     font-size: 20px;
 }
 
-// Posts
-
-.post-header {
-    margin: $spacing-unit;
+.sidebar {
+    order: 2;
+    background-color: $sidebar-color;
 }
+
+.sidebar h2 {
+    text-transform: uppercase;
+}
+
+.sidebar ul li {
+    padding: 0 0 1rem 0;   
+}
+
+
+.roll {
+    margin-bottom: 2.5rem;
+}
+
+
+// Posts
 
 .post-title {
     font-size: 2em;
@@ -32,8 +111,7 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
-  padding: 0 $spacing-unit $spacing-unit;
+  margin: 0 30px 30px 30px;
 }
 
 .post-list {
@@ -47,22 +125,12 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: darken($complimentary-color, 35%)
+    color: darken($complimentary-color, 35%);
+    margin-bottom: -1rem;
 }
 
 .post-link {
     display: block;
     font-size: 24px;
-}
-
-// Footer
-#footer {
-  background-color: $footer-color;
-}
-
-.site-footer, .wrap:after {
-  height: $footer-height; 
-}
-.site-footer {
-  background: $footer-color;
+    line-height: 1.2rem;
 }

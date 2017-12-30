@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "Welcome to the future"
-date: 2015-06-21T10:55:35-08:00
-sitemap:
-  lastmod: 2015-06-21T10:55:35-08:00
-  priority: 0.5
-  changefreq: monthly
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 I run the site for my local neighborhood association and recieved an interesting email from the contact form today.
 

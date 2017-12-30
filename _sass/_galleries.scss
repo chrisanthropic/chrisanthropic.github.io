@@ -1,0 +1,20 @@
+// Thanks to https://medium.com/@_jh3y/how-to-pure-css-masonry-layouts-a8ede07ba31a#.ay9vxfru7 for the code
+// https://jsbin.com/tuxoqusaxu/2/edit?css,output
+
+.masonry {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
+  -webkit-column-gap: 0;
+     -moz-column-gap: 0;
+          column-gap: 0;
+  position: relative;
+}
+
+.masonry-panel {
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}

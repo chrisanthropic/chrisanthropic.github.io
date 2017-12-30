@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "A scripted solution to import an existing Github organization into Terraform."
-sitemap:
-  priority: 0.5
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 ## What
 [https://github.com/chrisanthropic/terraform-import-github-organization](https://github.com/chrisanthropic/terraform-import-github-organization)

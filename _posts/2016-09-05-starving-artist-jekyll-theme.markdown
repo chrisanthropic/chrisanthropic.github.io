@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Starving Artist Jekyll Theme"
-sitemap:
-  priority: 0.5
-  changefreq: monthly
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 **Starving Artist**
 

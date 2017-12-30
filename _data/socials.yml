@@ -1,8 +1,8 @@
-- title: "Linkedin"
+- title: "feed"
+  href: "https://chrisanthropic.com/atom.xml"
+
+- title: "github"
+  href: "https://github.com/chrisanthropic"
+
+- title: "linkedin"
   href: "https://www.linkedin.com/in/ctarwater"
-
-- title: "Github"
-  href: "https://github.com/chrisanthropic/"
-
-- title: "Twitter"
-  href: "https://twitter.com/chrisanthropic"

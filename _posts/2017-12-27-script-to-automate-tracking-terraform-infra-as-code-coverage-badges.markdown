@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "A scripted solution to tracking what percentage of your AWS resources are managed by Terraform (with coverage badges)."
-sitemap:
-  priority: 0.5
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 ## What
 [https://github.com/chrisanthropic/terraform-infra-as-code-coverage-badges](https://github.com/chrisanthropic/terraform-infra-as-code-coverage-badges)
