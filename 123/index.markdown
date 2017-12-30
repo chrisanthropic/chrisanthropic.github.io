@@ -6,4 +6,4 @@ sitemap:
   exclude: 'no'
 ---
 
-<meta http-equiv="refresh" content="0; url=https://www.chrisanthropic.com/blog/2016/sending-mail-ses-route53-dkim-spf-dmarc/">
+<meta http-equiv="refresh" content="0; url=/blog/2016/sending-mail-ses-route53-dkim-spf-dmarc/">

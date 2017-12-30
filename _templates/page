@@ -1,9 +1,0 @@
----
-layout: {{ layout }}
-title: {{ title }}
-sitemap:
-  lastmod: {{ date }}
-  priority: 0.5
-  changefreq: monthly
-  exclude: 'no'
----

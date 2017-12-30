@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Sending mail with AWS SES and Route53 (DKIM, SPF, and DMARC)"
-sitemap:
-  priority: 0.5
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 **Table of Contents**
 

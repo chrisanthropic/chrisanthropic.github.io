@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="masonry">
+    <div>  {% for gallery in site.galleries %} {% if gallery.name == page.title %} {% for art in gallery.arts %}
+        <div class="masonry-panel">
+            <a href="#{{ art.order }}" data-caption-desc="{{ art.description }}">
+                <img src="{{ site.github.url }}/{{ art.image }}" alt="{{ art.title }}"class="zoom">
+            </a>
+        </div>{% endfor %} {% endif %} {% endfor %}
+    </div>
+</div>
+
+{% for gallery in site.galleries %} {% if gallery.name == page.title %} {% for art in gallery.arts %}
+<aside class="small-12 columns">
+    <a href="#x" class="small-12 columns lightbox-overlay" id="{{ art.order }}"></a>
+        <div class="lightbox-popup center-text">
+        <div class="small-12 columns lightbox-nav-wrap">
+                    <div class="small-4 lightbox-nav">
+                        <a class="lightbox-prev" href="#{{ art.order | minus: 1 }}">&#171;</a>
+                    </div>
+                    <div class="small-4 lightbox-nav">
+                        <a class="lightbox-next" href="#{{ art.order | plus: 1 }}">&#187;</a>
+                    </div>
+                    <div class="small-4 lightbox-nav">
+                        <a class="lightbox-popup-close" href="#close">&times;</a>
+                    </div>
+        </div>
+        <div class="small-12 columns">
+            <div class="masonry-panel">
+                <div class="small-12 columns">
+                    <div class="columns">
+                        <a href="#{{ art.order | plus: 1 }}"><img class="lightbox-image" src="{{ site.github.url }}/{{ art.image }}" alt="{{ art.title }}"></a>{% if art.description %}<p tabindex="0" class="lightbox-image-description">{{ art.description }}<a class="lightbox-close-description">×</a></p>{% endif %}
+                        <figcaption class="lightbox-caption">{% if art.title %}{{ art.title }}{% endif %} {% if art.artist %}- By {{ art.artist }}{% endif %}</figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+{% endfor %} {% endif %} {% endfor %}

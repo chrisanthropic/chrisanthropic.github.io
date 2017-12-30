@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Ubooquity Comics Server on Synology NAS"
-date: 2016-02-08T10:55:35-08:00
-sitemap:
-  priority: 0.5
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 
 Ubooquity is a cool piece of software that acts as a server for your comic book collection. Think of Plex but for comics.

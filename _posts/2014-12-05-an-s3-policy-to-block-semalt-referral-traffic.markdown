@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "An S3 Policy to Block Semalt Referral Traffic"
-date: 2014-12-05T14:06:15-08:00
-sitemap:
-  lastmod: 2014-12-05T14:06:15-08:00
-  priority: 0.5
-  changefreq: monthly
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 
 A lot of people have noticed shit tons of ferferral spam from semalt.com and their various other domains.

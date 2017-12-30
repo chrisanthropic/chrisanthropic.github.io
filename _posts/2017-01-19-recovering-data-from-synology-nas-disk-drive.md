@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Recovering data from a synology NAS disk drive."
-sitemap:
-  priority: 0.5
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 I recently had a hard drive in my Synology NAS crash. The SMART scan found something like 8 bad sectors and the volume crashed but the data was still available since the NAS kept it mounted read-only. Contacting Synology support didn't work for me since they said I'd need to install a new drive and create a new volume.
 

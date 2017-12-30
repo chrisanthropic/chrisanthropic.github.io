@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "Bundling Your Digital Comics"
-date: 2014-12-02T17:10:14-08:00
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 
 I highly recommend using [ImageMagick](http://www.imagemagick.org/) and [mogrify](http://www.imagemagick.org/script/mogrify.php) for most of these tasks. Make sure you understand how to use these tools before running the commands since they will modify your images. All of the commands should be run from the terminal and you should be in the directory of files that you want to modify.

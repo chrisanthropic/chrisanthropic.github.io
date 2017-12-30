@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Ansible Loops and AWS EC2, Now With Working Tags."
-date: 2016-01-19T10:55:35-08:00
-sitemap:
-  priority: 0.5
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 
 I've been playing with Ansible and have been working on using their awesome 'loop' feature. What this allows me to do is define a task such as creating an EC2 instance, and then loop over that task multiple times, using a file of specified variables as the input.

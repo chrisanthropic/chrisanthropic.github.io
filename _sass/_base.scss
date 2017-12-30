@@ -33,12 +33,24 @@ img {
 /**
  * Figures
  */
+
+figure {
+   margin: 0 !important;   
+}
+
 figure > img {
     display: block;
 }
 
+figure > img.thumb {
+    float: left;
+    margin: 0 1rem 1rem 2rem;
+}
+
+
 figcaption {
     font-size: $small-font-size;
+    margin-top: 1rem;
 }
 
 
@@ -71,6 +83,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
+    outline: none;
+    transition: all .2s ease-in!important;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: initial;
     color: $link-color;
     text-decoration: none;
 
@@ -79,8 +97,7 @@ a {
     }
 
     &:hover {
-        color: link-hover-color;
-        text-decoration: underline;
+        color: $link-hover-color;
     }
 }
 
@@ -159,4 +176,88 @@ pre {
             fill: $complimentary-color;
         }
     }
+}
+
+
+
+/**
+ *  Forms
+ */
+input {
+    text-rendering: auto;
+    color: $body-font-color;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+}
+
+[type='text'], [type='email'], textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    padding: 0.5rem;
+    border: 1px solid #cacaca;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    color: $body-font-color;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    border-radius: 0;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+textarea {
+    min-height: 250px!important;
+}
+
+input[name=message] {
+    min-height: 250px!important;
+    max-width: 100%;
+}
+
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+/**
+ *  Buttons
+ */
+.button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: 0.85em 1em;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    background-color: $button-color;
+    color: $button-text-color;
+}
+
+.button:hover, .button:focus, button:hover, button:focus {
+    background-color: $button-hover;
+    color: $button-text-color;
+    text-decoration: none;
+}
+
+/**
+ *  Horizontal Rule
+ */
+hr {
+    color: $primary-color
 }

@@ -1,0 +1,186 @@
+// code taken from: http://www.script-tutorials.com/css3-modal-popups/
+
+.lightbox-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 8;
+    height: 100%;
+    margin: 0px;
+
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.lightbox-overlay:target {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.lightbox-popup {
+    border: 3px solid $lightbox-border-color;
+    left: 48%;
+    opacity: 0;
+    padding: 0;
+    position: fixed;
+    text-align: justify;
+    top: 40%;
+    visibility: hidden;
+    z-index: 10;
+    max-width: 800px;
+    max-height: 80vw;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+
+}
+
+.lightbox-popup p, .lightbox-popup div {
+    margin-bottom: 10px;
+}
+
+.lightbox-overlay:target+.lightbox-popup {
+    background: $lightbox-background-color;
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+    margin: 1em;
+}
+
+.lightbox-popup .masonry-panel {
+    margin-top: 70px;
+}
+
+.lightbox-image {
+    max-height: 80vh;
+    max-width: 100%;
+}
+
+
+.lightbox-image-description {
+    position: fixed;
+    left: 0;
+    bottom: 80px;
+    width: 100%;
+    z-index: 99;
+    padding: 10px;
+    background: $lightbox-description-background-color;
+    color: $lightbox-description-text-color;
+    font-size: 1em;
+    opacity: 1;
+    text-align: center;
+    transition: opacity ease-in-out 0.5s;
+	margin: auto;
+    max-height:100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.lightbox-close-description {
+    color: $lightbox-navigation-color;
+    position: fixed;
+    right: 25px;
+    z-index: 999;
+    padding: 3px 3px 10px 10px;
+    font-size: 24px;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+p:focus {
+	opacity: 0;
+    visibility: invisible;
+    outline: 0;
+}
+
+p:focus ~ .lightbox-image-description {
+	opacity: 0;
+    visibility: invisible;
+    outline: 0;
+}
+
+.lightbox-caption {
+    color: $lightbox-caption-text-color;
+}
+
+////////////////////////////////////////////////////
+
+
+.lightbox-popup-close {
+    position: fixed;
+    right: 60px;
+    width: 30px;
+    top: -20px;
+}
+
+.lightbox-prev {
+    position: fixed;
+    top: -25px;
+    left: 60px;
+    width: 30px;
+}
+
+.lightbox-next {
+    position: fixed;
+    top: -25px;
+    left: 48%;
+    width: 30px;
+    right: -50px;
+}
+
+a.lightbox-prev, a.lightbox-next, a.lightbox-popup-close {
+    color: $lightbox-navigation-color;
+    font-size: 5em;
+    -webkit-font-smoothing: antialiased;
+}
+
+a.lightbox-prev:visited, a.lightbox-next:visited, a.lightbox-popup-close:visited {
+    color: $lightbox-navigation-color;
+    font-size: 5em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.zoom {
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.zoom:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  overflow: auto;
+}
+

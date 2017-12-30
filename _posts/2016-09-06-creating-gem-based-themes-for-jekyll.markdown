@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Creating Gem Based Themes For Jekyll"
-sitemap:
-  priority: 0.5
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 
 # How I Built Starving Artist Jekyll Theme

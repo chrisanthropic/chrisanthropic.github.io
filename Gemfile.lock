@@ -1,46 +1,28 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    POpen4 (0.1.4)
-      Platform (>= 0.4.0)
-      open4
-    Platform (0.4.0)
-    addressable (2.5.1)
-      public_suffix (~> 2.0, >= 2.0.2)
-    aws-sdk (2.9.42)
-      aws-sdk-resources (= 2.9.42)
-    aws-sdk-core (2.9.42)
-      aws-sigv4 (~> 1.0)
-      jmespath (~> 1.0)
-    aws-sdk-resources (2.9.42)
-      aws-sdk-core (= 2.9.42)
-    aws-sigv4 (1.0.0)
     colorator (1.1.0)
     colored (1.2)
-    configure-s3-website (2.0.0)
-      aws-sdk (~> 2)
-      deep_merge (~> 1.0.0)
-    deep_merge (1.0.1)
+    configure-s3-website (1.7.1)
+      deep_merge (= 1.0.0)
+    deep_merge (1.0.0)
     dotenv (1.0.2)
     exifr (1.2.5)
-    ffi (1.9.18)
+    ffi (1.9.14)
     forwardable-extended (2.6.0)
-    fspath (3.1.0)
-    html_compressor (0.0.3)
-      POpen4 (>= 0.1.4)
-    image_optim (0.24.3)
+    fspath (3.0.1)
+    image_optim (0.24.0)
       exifr (~> 1.2, >= 1.2.2)
       fspath (~> 3.0)
-      image_size (~> 1.5)
+      image_size (~> 1.3)
       in_threads (~> 1.3)
       progress (~> 3.0, >= 3.0.1)
-    image_optim_pack (0.5.0.20170609)
+    image_optim_pack (0.3.0.20160812)
       fspath (>= 2.1, < 4)
       image_optim (~> 0.19)
-    image_size (1.5.0)
-    in_threads (1.4.0)
-    jekyll (3.4.3)
-      addressable (~> 2.4)
+    image_size (1.4.2)
+    in_threads (1.3.1)
+    jekyll (3.2.1)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -50,49 +32,49 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-sass-converter (1.5.0)
+    jekyll-feed (0.6.0)
+    jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
-    jmespath (1.3.1)
-    kramdown (1.13.2)
+    kramdown (1.12.0)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
-    mini_magick (4.7.1)
-    open4 (1.3.4)
+    mini_magick (4.5.1)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    progress (3.3.1)
-    public_suffix (2.0.5)
-    rake (12.0.0)
-    rb-fsevent (0.9.8)
-    rb-inotify (0.9.9)
-      ffi (~> 1.0)
+    progress (3.2.2)
+    rake (11.2.2)
+    rb-fsevent (0.9.7)
+    rb-inotify (0.9.7)
+      ffi (>= 0.5.0)
     rouge (1.11.1)
-    s3_website (3.1.0)
+    s3_website (2.15.0)
       colored (= 1.2)
-      configure-s3-website (= 2.0.0)
+      configure-s3-website (= 1.7.1)
       dotenv (~> 1.0)
       thor (~> 0.18)
     safe_yaml (1.0.4)
-    sass (3.4.24)
-    thor (0.19.4)
+    sass (3.4.22)
+    starving-artist-jekyll-theme (0.2.3)
+    thor (0.19.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  html_compressor
   image_optim
   image_optim_pack
   jekyll
+  jekyll-feed
   mini_magick
   rake
   s3_website
   sass
+  starving-artist-jekyll-theme
 
 BUNDLED WITH
-   1.15.1
+   1.12.5

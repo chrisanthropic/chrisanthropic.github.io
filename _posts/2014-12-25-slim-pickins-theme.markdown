@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "Slim Pickins Theme"
-date: 2014-12-25T10:55:35-08:00
-sitemap:
-  lastmod: 2014-12-25T10:55:35-08:00
-  priority: 0.5
-  changefreq: monthly
-  exclude: 'no'
+keywords:
+description:
+thumbnail:
+facebook_type:
+facebook_image:
 ---
 **Slim Pickens**
 
