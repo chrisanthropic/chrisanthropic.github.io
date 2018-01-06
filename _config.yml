@@ -7,9 +7,8 @@ keywords: jekyll, jekyll theme, portfolio theme, artist theme
 description: >
   Playing with things and documenting it.
 
-# Only use this if you are serving your site via Github Pages
-baseurl: ""
-url: https://www.chrisanthropic.com
+github:
+  url: "https://www.chrisanthropic.com"
 
 header: images/logo.png
 
@@ -39,7 +38,7 @@ feed:
 
 include: ['_pages']
 
-permalink: /blog/:year/:title
+permalink: /blog/:year/:title/
 
 collections:
   - galleries
