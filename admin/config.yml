@@ -29,4 +29,4 @@ collections:
       - {label: "Layout", name: "layout", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Permalink", name: "permalink", widget: "hidden", default: "/{{slug}}/"}
-      - {label: "Sidebar", name: "sidebar", widget: "string", default: ""}
+      - {label: "Sidebar", name: "sidebar", widget: "string", default: " "}
