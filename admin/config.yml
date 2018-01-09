@@ -20,13 +20,15 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "page"
     label: "Page"
     folder: "_pages"
     create: true
     slug: "{{slug}}.md"
     fields:
-      - {label: "Layout", name: "layout", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "select", options: ["about", "blog", "contact", "gallery", "page"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Permalink", name: "permalink", widget: "hidden", default: "/{{slug}}/"}
       - {label: "Sidebar", name: "sidebar", widget: "string", default: " "}
+      - {label: "Body", name: "body", widget: "markdown"}
