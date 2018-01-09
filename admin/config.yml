@@ -4,7 +4,7 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "images/uploads"
+media_folder: "images"
 
 collections:
   - name: "post"
@@ -30,5 +30,5 @@ collections:
       - {label: "Layout", name: "layout", widget: "select", options: ["about", "blog", "contact", "gallery", "page"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Permalink", name: "permalink", widget: "hidden", default: "/{{slug}}/"}
-      - {label: "Sidebar", name: "sidebar", widget: "string", default: " "}
+      - {label: "Sidebar", name: "sidebar", widget: "select", options: ["recent_posts"]}
       - {label: "Body", name: "body", widget: "markdown"}
