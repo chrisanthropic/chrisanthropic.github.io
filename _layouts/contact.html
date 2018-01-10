@@ -4,7 +4,7 @@ layout: default
 <div class="contact_container wraptainer">
   <div class="small-12 columns">
   <h1 class="entry-title medium-offset-1">Contact</h1>
-    <form name="contact" netlify netlify-honeypot="_gotcha">
+    <form name="contact" netlify netlify-honeypot="_gotcha" action="/contact/thanks/">
       <div class="small-12 medium-offset-1 medium-4 columns">
         <label for="name">Name</label>
         <input type="text" name="name" placeholder="Your name" required="">
@@ -23,7 +23,6 @@ layout: default
       </div>
       <div class="small-12 medium-offset-1 medium-4 columns">
         <input type="submit" value="Send Email" class="button">
-        <input type="hidden" name="_next" value="{{ site.github.url }}/contact/thanks/" />
         <input type="text" name="_gotcha" style="display:none" />
       </div>
     </form>
