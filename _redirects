@@ -1,7 +1,7 @@
  # Redirects from what the browser requests to what we serve
 
-www.chrisanthropic.com/gitlabCI/                                                           /blog/2016/gitlabCI/
-www.chrisanthropic.com/recovering-data-from-synology-nas-disk-drive/                       /blog/2017/recovering-data-from-synology-nas-disk-drive/
-www.chrisanthropic.com/scheduling-jekyll-posts-with-gitlabci-aws-lambda/                   /blog/2016/scheduling-jekyll-posts-with-gitlabci-aws-lambda/
-www.chrisanthropic.com/123/                                                                /blog/2016/sending-mail-ses-route53-dkim-spf-dmarc/
-www.chrisanthropic.com/sending-mail-ses-route53-dkim-spf-dmarc/                            /blog/2016/sending-mail-ses-route53-dkim-spf-dmarc/
+/gitlabCI/                                                           /blog/2016/gitlabCI/
+/recovering-data-from-synology-nas-disk-drive/                       /blog/2017/recovering-data-from-synology-nas-disk-drive/
+/scheduling-jekyll-posts-with-gitlabci-aws-lambda/                   /blog/2016/scheduling-jekyll-posts-with-gitlabci-aws-lambda/
+/123/                                                                /blog/2016/sending-mail-ses-route53-dkim-spf-dmarc/
+/sending-mail-ses-route53-dkim-spf-dmarc/                            /blog/2016/sending-mail-ses-route53-dkim-spf-dmarc/
