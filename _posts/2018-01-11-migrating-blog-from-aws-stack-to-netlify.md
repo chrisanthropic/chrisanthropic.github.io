@@ -159,7 +159,9 @@ Now that I'm just using AWS as a Registrar I'll remove the remnants.
 - delete all of the DNS records **except** `SOA` and `NS`
 - delete S3 bucket that was hosting the site before
 
-### Post-Processing
+## Post-Processing
+----------------
+
 We're pretty much wrapped up and your site should now be available at your `https://YOURDOMAIN.com` and managed via Netlify. Awesome. Now let's take advantage of another great feature Netlify offers - post-processing!
 
 Previously I relied on a Rakefile with some custom build tasks that would loslessly compress images, minify static assets, etc. Netlify has this built in and can handle it for us as long as we enable it.
