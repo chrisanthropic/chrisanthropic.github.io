@@ -16,13 +16,13 @@ facebook_image:
   - [General](#general)
   - [Build & Deploy](#bild-and-deploy)
 - [DNS](#dns)
-  - [AWS](#aws--change-your-ttl)
+  - [AWS](#aws-change-your-ttl)
   - [Add Your Custom Domain to Netlify](#add-your-custom-domain-to-netlify)
   - [Set up Netlify DNS](#set-up-netlify-dns)
   - [Update Your AWS DNS](#update-your-aws-dns)
 - [Enable HTTPS](#enable-https)
 - [AWS Cleanup](#aws-cleanup)
-- [Post-Processing](#post--processing)
+- [Post-Processing](#post-processing)
 - [Next Steps](#nest-steps)
 
 
