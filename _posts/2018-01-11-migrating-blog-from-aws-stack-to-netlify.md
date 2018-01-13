@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How I migrated my blog from an AWS stack to Netlify."
+title: "How I migrated my Jekyll blog from an AWS stack to Netlify."
 keywords: "Netlify, Jekyll, static-site, hosting, CDN, AWS"
 description: "How to migrate a Jekyll static-site blog from AWS to Netlify. Including DNS, CDN, SSL, "
 thumbnail:
