@@ -79,7 +79,7 @@ I'm not going to cover every setting here, only the important ones I had to chan
 ## DNS
 ----------------
 
-### AWS - Change your TTL
+### AWS Change your TTL
 Now that I've got Netlify set up and serving my site, it's time to start thinking about how to migrate from AWS. Netlify is already hosting an identical version of the site (replacing S3) behind their free CDN (replacing CloudFront) so we only really need to transfer over the DNS. I used AWS Route53 for my DNS so that's what I'll show in the example.
 
 First we're going to WRITE DOWN our existing TTL settings then we're going to change them to 60 seconds. This is so our DNS update propogates in a timely fashion. We'll revert them once we're finished.
