@@ -131,6 +131,8 @@ Now that you've set up DNS for your domain on Netlify it's time to tell AWS (als
 - Test your DNS here: [http://dnscheck.pingdom.com/](http://dnscheck.pingdom.com/). All tests should come back Green / "Everything is Fine". 
 
 ## Enable HTTPS
+----------------
+
 Netlify provides free SSL certificate handling via Let'sEncrypt. Let's use it.
 
 **NOTE** 
@@ -150,6 +152,8 @@ The DNS zone for YOURDOMAIN was created less than 1 hour ago. Please allow at le
 - (Optionally) Force HTTPS. My site is simple and I know that forcing HTTPS won't break it so I always just select "Force HTTPS".
 
 ## AWS Cleanup
+----------------
+
 Now that I'm just using AWS as a Registrar I'll remove the remnants.
 - delete CloudFront distribution
 - delete all of the DNS records **except** `SOA` and `NS`
@@ -167,4 +171,6 @@ Previously I relied on a Rakefile with some custom build tasks that would losles
 - Click save
 
 ## Next Steps
+----------------
+
 In my next post I'll cover adding Netlify's free and open source admin dashboard to our site so we can use it to create/modify/destroy posts and pages from a typical WYSIWYG Web interface! This is the main reason I started this journey - an easy interface that I can add to static-sites that I build for other people who may not want to use Git to manage it.
