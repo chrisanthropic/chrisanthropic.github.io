@@ -27,11 +27,9 @@ facebook_image:
 
 
 ----------------
-This is the first part of a planned 3 part series.
+This is the first part of a planned 2 part series.
 - Part 1: How I migrated my blog from an AWS stack to Netlify
 - Part 2: [How I added NetlifyCMS and secured it with Netlify Identity and Git Gateway](/blog/2018/adding-netlifycms-to-jekyll-secure-with-netlify-identity-git-gateway/)
-- Part 3: How I migrated from formspree.io to Netlify Forms
-
 
 ## Intro
 ----------------

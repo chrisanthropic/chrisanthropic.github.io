@@ -27,10 +27,9 @@ facebook_image:
 
 
 ----------------
-This is the first part of a planned 3 part series.
+This is the first part of a planned 2 part series.
 - Part 1: [How I migrated my blog from an AWS stack to Netlify](/blog/2018/migrating-blog-from-aws-stack-to-netlify/)
 - Part 2: How I added NetlifyCMS and secured it with Netlify Identity and Git Gateway
-- Part 3: How I migrated from formspree.io to Netlify Forms
 
 
 ## Intro
@@ -196,6 +195,5 @@ I always login via email (username/password) first to test that it's working. Th
 
 ## Next Steps
 ----------------
-First, I'd highly recommend reading through the NetlifyCMS documentation. It's pretty short but very clear and concise and will get you going on any further customizations you might want to make to your admin page. Next, I'm planning on at least one more post digging into some more cool features Netlify provides (maybe two).
+I'd highly recommend reading through the [NetlifyCMS documentation](https://www.netlifycms.org/docs/). It's pretty short but very clear and concise and will get you going on any further customizations you might want to make to your admin page.
 
-Next up is how I migrated from formspree.io to Netlify form to manage my contact form. Now I can view/delete contact form messages from Netlify!
