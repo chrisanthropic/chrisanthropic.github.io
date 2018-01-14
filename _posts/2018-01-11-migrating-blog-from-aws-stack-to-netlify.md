@@ -23,7 +23,7 @@ facebook_image:
 - [Enable HTTPS](#enable-https)
 - [AWS Cleanup](#aws-cleanup)
 - [Post-Processing](#post-processing)
-- [Next Steps](#nest-steps)
+- [Next Steps](#next-steps)
 
 
 ----------------
