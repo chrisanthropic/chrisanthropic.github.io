@@ -29,7 +29,7 @@ facebook_image:
 ----------------
 This is the first part of a planned 3 part series.
 - Part 1: How I migrated my blog from an AWS stack to Netlify
-- Part 2: How I added NetlifyCMS and secured it with Netlify Identity and Git Gateway
+- Part 2: [How I added NetlifyCMS and secured it with Netlify Identity and Git Gateway](/blog/2018/adding-netlifycms-to-jekyll-secure-with-netlify-identity-git-gateway/)
 - Part 3: How I migrated from formspree.io to Netlify Forms
 
 
@@ -175,4 +175,4 @@ Previously I relied on a Rakefile with some custom build tasks that would losles
 ## Next Steps
 ----------------
 
-In my next post I'll cover adding Netlify's free and open source admin dashboard to our site so we can use it to create/modify/destroy posts and pages from a typical WYSIWYG Web interface! This is the main reason I started this journey - an easy interface that I can add to static-sites that I build for other people who may not want to use Git to manage it.
+In my [next post](/blog/2018/adding-netlifycms-to-jekyll-secure-with-netlify-identity-git-gateway/) I'll cover adding Netlify's free and open source admin dashboard to our site so we can use it to create/modify/destroy posts and pages from a typical WYSIWYG Web interface! This is the main reason I started this journey - an easy interface that I can add to static-sites that I build for other people who may not want to use Git to manage it.
