@@ -41,8 +41,8 @@ collections:
 
 #### SEO Stuff
 # Google Analytics
-google_universal_analytics: 
-google_universal_analytics_cookiedomain: auto
+#google_universal_analytics: 
+#google_universal_analytics_cookiedomain: auto
 
 # Facebook Opengraph
 facebook_user:
