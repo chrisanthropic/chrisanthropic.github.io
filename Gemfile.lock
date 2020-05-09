@@ -8,7 +8,7 @@ GEM
     deep_merge (1.0.0)
     dotenv (1.0.2)
     exifr (1.2.5)
-    ffi (1.9.14)
+    ffi (1.12.2)
     forwardable-extended (2.6.0)
     fspath (3.0.1)
     image_optim (0.24.0)
